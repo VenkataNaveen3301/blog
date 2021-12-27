@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog App</title>
+    <link rel="stylesheet" href="index1.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h3>WEB DEV</h3>
+            <ul class="links">
+                <li>Home</li>
+                <li>Blogs</li>
+                <li>About</li>
+                <li>Login</li>
+                <li>Register</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="info">
+        <div class="content">
+            <h2>Learn Web development by <span> READING BLOGS </span> </h2>
+
+            <p>Learn in-demand tech skills in half the time
+                Hands-on examples help you learn <br> without the hassle of setup or videos</p> <br>
+            <button>Learn More</button>
+        </div>
+    </section>
+
+
+    <div class="blog">
+        <h2>Create a New Blog</h2>
+        <div class="blog-input">
+            <!-- <h3>Add A New Blog</h3> -->
+            <div class="blog-wrapper">
+                <label>Enter Blog Title</label>
+                <input type="text" id="blog-title" placeholder="Title of your blog">
+                <label>Select Your Image</label>
+                <input type="file" id="blog-image" placeholder="Image">
+                <label>Description</label>
+                <textarea id="blog-content" placeholder="Description goes here...." rows="5"></textarea>
+                <button id="add-blog-btn" class="btn" type="button">
+                    Add Blog
+                </button>
+            </div>
+        </div>
+
+        <div class="blog-list">
+
+        </div>
+
+
+    </div>
+
+    <footer>
+        Copyright &copy 2021 All Rights Reserved
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
