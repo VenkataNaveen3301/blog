@@ -6,9 +6,7 @@ function Blog(id, title, image, content) {
     this.image = image;
     this.content = content;
 }
-
 // Add eventListeners 
-
 function eventListeners() {
     document.addEventListener("DOMContentLoaded", displayBlogs);
     document.getElementById("add-blog-btn").addEventListener("click", addNewBlog);
@@ -18,14 +16,10 @@ function eventListeners() {
 }
 eventListeners();
 
-
 // get item from storage 
-
 function getDataFromStorage() {
     return localStorage.getItem("blogs") ? JSON.parse(localStorage.getItem("blogs")) : [];
 }
-
-
 
 // add a new blog in the list 
 
@@ -54,8 +48,6 @@ function addNewBlog() {
 
 }
 
-
-
 //  input validation 
 
 function validateInput(title, image, content) {
@@ -67,7 +59,6 @@ function validateInput(title, image, content) {
         if (content.value === "");
     }
 }
-
 
 // create a new blog div
 
